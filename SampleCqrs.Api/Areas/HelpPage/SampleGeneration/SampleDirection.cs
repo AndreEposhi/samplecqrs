@@ -5,7 +5,13 @@ namespace SampleCqrs.Api.Areas.HelpPage
     /// </summary>
     public enum SampleDirection
     {
+        /// <summary>
+        /// 
+        /// </summary>
         Request = 0,
+        /// <summary>
+        /// 
+        /// </summary>
         Response
     }
 }

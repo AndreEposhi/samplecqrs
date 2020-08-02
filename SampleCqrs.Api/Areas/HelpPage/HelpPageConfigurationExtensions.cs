@@ -16,6 +16,9 @@ using SampleCqrs.Api.Areas.HelpPage.Models;
 
 namespace SampleCqrs.Api.Areas.HelpPage
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class HelpPageConfigurationExtensions
     {
         private const string ApiModelPrefix = "MS_HelpPageApiModel_";

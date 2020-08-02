@@ -7,8 +7,14 @@ using System.Web.Routing;
 
 namespace SampleCqrs.Api
 {
+    /// <summary>
+    /// Configurações da aplicação
+    /// </summary>
     public class WebApiApplication : System.Web.HttpApplication
     {
+        /// <summary>
+        /// Configuraçãoes da aplicação
+        /// </summary>
         protected void Application_Start()
         {
             UnityConfig.RegisterComponents();

@@ -5,8 +5,15 @@ using System.Web.Http.Cors;
 
 namespace SampleCqrs.Api
 {
+    /// <summary>
+    /// configurações de inicialização da aplicação
+    /// </summary>
     public static class WebApiConfig
     {
+        /// <summary>
+        /// Registrar as configurações da aplicação
+        /// </summary>
+        /// <param name="config"></param>
         public static void Register(HttpConfiguration config)
         {
             config.Formatters.JsonFormatter.SerializerSettings = new JsonSerializerSettings();
