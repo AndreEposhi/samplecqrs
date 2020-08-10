@@ -26,17 +26,14 @@ namespace SampleCqrs.Domain.Queries.Handlers.Cadastro.Cliente
 
             if (!clientes.Any())
             {
-                respostaCustomizada = new CustomResponse(mensagem: "Erro ao consultar");
+                respostaCustomizada = new CustomResponse(mensagem: "Erro ao consultar.");
                 respostaCustomizada.AdicionarErro(new List<string> { "Não há clientes." });
 
                 return Task.FromResult(respostaCustomizada);
             }
 
             respostaCustomizada = new CustomResponse(ResponseStatus.Sucesso, "Consultar clientes.");
-            respostaCustomizada.AdicionarDado(new List<object>
-            {
-                clientes
-            });
+            respostaCustomizada.AdicionarDado(clientes.ToList<object>());
 
             return Task.FromResult(respostaCustomizada);
         }
